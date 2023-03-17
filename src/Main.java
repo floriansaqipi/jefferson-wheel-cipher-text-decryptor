@@ -7,6 +7,9 @@ public class Main {
         FileAnalyzer characterCounter = new FileAnalyzer(file);
         characterCounter.findCharacterFrequency();
         characterCounter.printCharacterHashMap();
+        System.out.printf("%d\n",characterCounter.countedCharacters());
+        characterCounter.printStats();
+
 
     }
 }
