@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9c9e7a-e08c-4c43-8145-38af6eae907c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AlphabetMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlphabetMaps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EnglishAlphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnglishAlphabet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Florian Saqipi/Documents/programming/moduli java/java_01&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Florian Saqipi/Documents/programming/moduli java/monoalphabetic substitution cipher text character frequency analysis decryptor&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -74,13 +75,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FileAnalyzer.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FileAnalyzer.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="9" />
+          <line>104</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
