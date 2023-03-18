@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -8,19 +10,25 @@ import java.util.TreeMap;
 public class FileAnalyzer {
     private HashMap<Character,Integer> characterHashMap = AlphabetMaps.getEmptyAlphabetHashMap();
     private TreeMap<Integer,Character> sortedValTreeMap;
-    private File file;
-    public FileAnalyzer(File file){
-        this.file = file;
+    private  HashMap<Character,Character> frequencyMappedHashMap = new HashMap<>();
+    private File inputFile;
+    private File outputFile;
+    public FileAnalyzer(File inputFile,File outputFile){
+
+        this.inputFile = inputFile;
+        this.outputFile = outputFile;
     }
     public void findCharacterFrequency(){
         try {
-        Scanner sc = new Scanner(this.file);
+        Scanner sc = new Scanner(this.inputFile);
         while (sc.hasNext()){
             addCharactersOfStringToHashMap(sc.next());
         }
+        sc.close();
         }catch (FileNotFoundException ex){
             ex.printStackTrace();
         }
+
     }
 
     private void addCharactersOfStringToHashMap(String string){
@@ -51,12 +59,16 @@ public class FileAnalyzer {
         }
         return sum;
     }
-    
+
+    private void initializeSortedValTreeMap(){
+        this.sortedValTreeMap = AlphabetMaps.getValueSortedTreeMap(this.characterHashMap);
+    }
+
     public void printStats(){
-        TreeMap<Integer,Character> treeMap = AlphabetMaps.getValueSortedTreeMap(this.characterHashMap);
+        this.initializeSortedValTreeMap();
         double value = 0;
         char character;
-        for(Map.Entry<Integer,Character> entry: treeMap.entrySet()){
+        for(Map.Entry<Integer,Character> entry:this.sortedValTreeMap.entrySet()){
             value = (entry.getKey()*1.0)/countedCharacters() * 100;
             character = entry.getValue();
             System.out.printf("%c=%.2f",character,value);
@@ -65,6 +77,47 @@ public class FileAnalyzer {
                 
             }
             System.out.println();
+        }
+    }
+
+
+    private void writeDecryptedStringToFile(String encryptedString, FileWriter fileWriter){
+        try {
+            for(int i = 0;i<encryptedString.length();i++){
+                System.out.print(encryptedString.charAt(i));
+                if(!Character.isAlphabetic(encryptedString.charAt(i)) ){
+                    continue;
+                }
+                fileWriter.write(this.frequencyMappedHashMap.get(Character.toUpperCase(encryptedString.charAt(i))));
+
+            }
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
+
+
+    public void writeBack(){
+        this.mapValuesByFrequencies();
+        try {
+            FileWriter fileWriter = new FileWriter(this.outputFile);
+            Scanner sc = new Scanner(this.inputFile);
+            while (sc.hasNext()){
+                writeDecryptedStringToFile(sc.next(),fileWriter);
+
+            }
+            sc.close();
+            fileWriter.close();
+        } catch (IOException ex){
+            ex.printStackTrace();
+        }
+    }
+    private void mapValuesByFrequencies(){
+        this.initializeSortedValTreeMap();
+        int i = 0;
+        for (Map.Entry<Integer, Character> entry:this.sortedValTreeMap.entrySet()){
+            this.frequencyMappedHashMap.put(entry.getValue(),EnglishAlphabet.alphabetFrequencyOrder.charAt(i));
+            i++;
         }
     }
 

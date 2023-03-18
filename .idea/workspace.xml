@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9c9e7a-e08c-4c43-8145-38af6eae907c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AlphabetHashMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlphabetMaps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EnglishAlphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnglishAlphabet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -37,9 +38,15 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Florian Saqipi/Documents/programming/moduli java/java_01&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Florian Saqipi\Documents\programming\moduli java\jefferson wheel cipher text decryptor\src\files" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,10 +74,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FileAnalyzer.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="4" />
+          <line>115</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FileAnalyzer.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="encryptedString.charAt(i)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
