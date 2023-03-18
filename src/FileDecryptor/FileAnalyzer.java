@@ -1,5 +1,8 @@
 package FileDecryptor;
 
+import alphabetUtils.AlphabetMaps;
+import alphabetUtils.EnglishAlphabet;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -117,7 +120,7 @@ public class FileAnalyzer {
         this.initializeSortedValLinkedHashMap();
         int i = 0;
         for (Map.Entry<Character, Integer> entry:this.sortedValLinkedHashMap.entrySet()){
-            this.frequencyMappedHashMap.put(entry.getKey(),EnglishAlphabet.alphabetFrequencyOrder.charAt(i));
+            this.frequencyMappedHashMap.put(entry.getKey(), EnglishAlphabet.alphabetFrequencyOrder.charAt(i));
             i++;
         }
     }
