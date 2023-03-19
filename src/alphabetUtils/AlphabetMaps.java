@@ -3,10 +3,11 @@ package alphabetUtils;
 import java.util.*;
 
 public class AlphabetMaps {
-    public static HashMap<Character,Integer> getEmptyAlphabetHashMap(){
+    private AlphabetMaps(){}
+    public static HashMap<Character,Integer> getEmptyEnglishAlphabetHashMap(){
         HashMap<Character,Integer> hashMap = new HashMap<>();
-        for(int i = 0; i< EnglishAlphabet.alphabet.length(); i++){
-            hashMap.put(EnglishAlphabet.alphabet.charAt(i),0);
+        for(int i = 0; i< Alphabet.englishAlphabet.length(); i++){
+            hashMap.put(Alphabet.englishAlphabet.charAt(i),0);
         }
         return hashMap;
     }

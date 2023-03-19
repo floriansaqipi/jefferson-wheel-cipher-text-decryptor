@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9c9e7a-e08c-4c43-8145-38af6eae907c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/decryption/Analysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decryption/EnglishDecrypter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/decryption/ShqipDecryptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/files/data_shqip.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileDecryptor/FileAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileDecryptor/FileAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileDecryptor/FileAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decryption/FileDecrypter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input_small_sample.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabetUtils/AlphabetMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabetUtils/AlphabetMaps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabetUtils/EnglishAlphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabetUtils/Alphabet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/input_small_sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/input_small_sample.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -37,7 +43,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Florian Saqipi/Documents/programming/moduli java/monoalphabetic substitution cipher text character frequency analysis decryptor&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Florian Saqipi/Documents/programming/moduli java/java_01&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -69,6 +75,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/decryption/EnglishDecrypter.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="encryptedString.charAt(i)" language="JAVA" />
