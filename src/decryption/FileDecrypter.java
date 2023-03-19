@@ -155,7 +155,7 @@ public abstract class FileDecrypter implements Analysis {
     }
 
     public HashMap<Character,Character> getFrequencyMappedHashMap(){
-        return  this.frequencyMappedHashMap;
+        return this.frequencyMappedHashMap;
     }
 
 }

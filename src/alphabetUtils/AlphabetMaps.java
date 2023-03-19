@@ -11,6 +11,14 @@ public class AlphabetMaps {
         }
         return hashMap;
     }
+
+    public static HashMap<Character,Integer> getEmptyAlbanianAlphabetHashMap(){
+        HashMap<Character,Integer> hashMap = new HashMap<>();
+        for(int i = 0; i< Alphabet.albanianAlphabet.length(); i++){
+            hashMap.put(Alphabet.albanianAlphabet.charAt(i),0);
+        }
+        return hashMap;
+    }
     public static LinkedHashMap<Character, Integer> getValueSortedLinkedHashMap(HashMap<Character,Integer> hashMap){
         ArrayList<Map.Entry<Character,Integer>> entryList = new ArrayList<>(hashMap.entrySet());
         sortArrayListwithEntries(entryList);
