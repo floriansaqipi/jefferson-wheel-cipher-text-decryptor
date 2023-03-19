@@ -5,6 +5,7 @@ import alphabetUtils.AlphabetMaps;
 
 
 import java.io.File;
+import java.util.HashMap;
 
 public class EnglishDecrypter extends FileDecrypter{
     public EnglishDecrypter(File inputFile, File outputFile){
@@ -17,8 +18,9 @@ public class EnglishDecrypter extends FileDecrypter{
     public String extractKey(){
         String key = "";
         String alphabet = Alphabet.englishAlphabet;
+        HashMap<Character,Character> reversedCharFreqMap = AlphabetMaps.reverseHashMap(this.getFrequencyMappedHashMap());
         for(int i = 0;i<alphabet.length();i++){
-            key += this.getFrequencyMappedTreeMap().get(alphabet.charAt(i));
+            key += reversedCharFreqMap.get(alphabet.charAt(i));
         }
         return key;
     }

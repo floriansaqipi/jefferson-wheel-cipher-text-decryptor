@@ -13,7 +13,7 @@ public abstract class FileDecrypter implements Analysis {
     private  String alphabetCharacterFrequency;
     private HashMap<Character,Integer> characterHashMap ;
     private LinkedHashMap<Character,Integer> sortedValLinkedHashMap;
-    private final TreeMap<Character,Character> frequencyMappedTreeMap = new TreeMap<>();
+    private final HashMap<Character,Character> frequencyMappedHashMap = new HashMap<>();
     private final File inputFile;
     private final File outputFile;
     protected FileDecrypter(File inputFile, File outputFile){
@@ -55,7 +55,7 @@ public abstract class FileDecrypter implements Analysis {
         this.initializeSortedValLinkedHashMap();
         int i = 0;
         for (Map.Entry<Character, Integer> entry:this.sortedValLinkedHashMap.entrySet()){
-            this.frequencyMappedTreeMap.put(entry.getKey(), this.alphabetCharacterFrequency.charAt(i));
+            this.frequencyMappedHashMap.put(entry.getKey(), this.alphabetCharacterFrequency.charAt(i));
             i++;
         }
     }
@@ -84,7 +84,7 @@ public abstract class FileDecrypter implements Analysis {
                 if(!Character.isAlphabetic(encryptedString.charAt(i)) ){
                     continue;
                 }
-                fileWriter.write(this.frequencyMappedTreeMap.get(Character.toUpperCase(encryptedString.charAt(i))));
+                fileWriter.write(this.frequencyMappedHashMap.get(Character.toUpperCase(encryptedString.charAt(i))));
 
             }
         }catch (IOException ex){
@@ -154,8 +154,8 @@ public abstract class FileDecrypter implements Analysis {
         this.characterHashMap = characterHashMap;
     }
 
-    public TreeMap<Character,Character> getFrequencyMappedTreeMap(){
-        return  this.frequencyMappedTreeMap;
+    public HashMap<Character,Character> getFrequencyMappedHashMap(){
+        return  this.frequencyMappedHashMap;
     }
 
 }

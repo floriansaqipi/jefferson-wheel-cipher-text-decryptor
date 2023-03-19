@@ -29,4 +29,12 @@ public class AlphabetMaps {
             }
         });
     }
+
+    public static HashMap<Character, Character> reverseHashMap(HashMap<Character,Character> hashMap){
+        HashMap<Character,Character> reversedHashMap = new HashMap<>();
+        for(Map.Entry<Character,Character> entry: hashMap.entrySet()){
+            reversedHashMap.put(entry.getValue(),entry.getKey());
+        }
+        return reversedHashMap;
+    }
 }
