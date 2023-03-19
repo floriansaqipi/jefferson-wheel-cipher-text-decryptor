@@ -1,21 +1,14 @@
+import decryption.*;
+
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class Main {
     public static void main(String[] args){
-        File file = new File("src/input.txt");
-        File file1 = new File("src/output.txt");
+        File fileInput = new File("src/files/input.txt");
+        File fileOutput = new File("src/files/output.txt");
 
-
-
-
-        FileAnalyzer characterCounter = new FileAnalyzer(file,file1);
-        characterCounter.findCharacterFrequency();
-        characterCounter.printCharacterHashMap();
-        System.out.printf("%d\n",characterCounter.countedCharacters());
-        characterCounter.printStats();
-        characterCounter.writeBack();
+        FileDecrypter fileDecrypter = new EnglishDecrypter(fileInput,fileOutput);
+        fileDecrypter.performDecryption();
 
 
     }
