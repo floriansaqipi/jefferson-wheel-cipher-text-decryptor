@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9c9e7a-e08c-4c43-8145-38af6eae907c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/decryption/AlbanianDecrypter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/files/input_shqip.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabetUtils/Alphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabetUtils/Alphabet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alphabetUtils/AlphabetMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabetUtils/AlphabetMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decryption/EnglishDecrypter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decryption/EnglishDecrypter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/decryption/FileDecrypter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decryption/FileDecrypter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decryption/ShqipDecryptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/data_shqip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/data_shqip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
