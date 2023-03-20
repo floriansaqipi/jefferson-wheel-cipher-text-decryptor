@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31754a82-15bc-4c16-afc7-7174ca5c9e37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/files/input_small.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/files/small_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabetUtils/Alphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabetUtils/Alphabet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/input_small_sample.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/files/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/output.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +52,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a9c9e7a-e08c-4c43-8145-38af6eae907c" name="Changes" comment="" />
+      <changelist id="31754a82-15bc-4c16-afc7-7174ca5c9e37" name="Changes" comment="" />
       <created>1678830730302</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
