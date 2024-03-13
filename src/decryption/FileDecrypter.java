@@ -158,4 +158,8 @@ public abstract class FileDecrypter implements Analysis {
         return this.frequencyMappedHashMap;
     }
 
+    public void printCharHashMap(){
+        System.out.println(this.frequencyMappedHashMap);
+    }
+
 }
